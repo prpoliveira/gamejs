@@ -67,5 +67,5 @@ function estourar(elemento){
 	}
 }
 function iniciar(){
-	loop = setInterval(addBola, 1000);
+	loop = setInterval(addBola, 300);
 }
