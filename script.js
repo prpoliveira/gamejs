@@ -42,7 +42,7 @@ function estourar(elemento){
 		  confirmButtonText: 'Vaaamoo!'
 		  }).then((result) => {
 				fase = 2;
-				loop = setInterval(addBola, 700);
+				loop = setInterval(addBola, 1200);
 			});
 	}else if(fase ==2 && document.getElementsByClassName("bola").length == 0){
 		clearInterval(loop);
@@ -54,7 +54,7 @@ function estourar(elemento){
 		  confirmButtonText: 'Vaaamoo!'
 		  }).then((result) => {
 				fase = 3;
-				loop = setInterval(addBola, 600);
+				loop = setInterval(addBola, 1000);
 			});
 	}else if(fase ==3 && document.getElementsByClassName("bola").length == 0){
 		clearInterval(loop);
@@ -67,5 +67,5 @@ function estourar(elemento){
 	}
 }
 function iniciar(){
-	loop = setInterval(addBola, 300);
+	loop = setInterval(addBola, 1500);
 }
